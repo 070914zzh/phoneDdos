@@ -36,6 +36,10 @@ def send_request(session, i, userphone):
 if __name__ == "__main__":
     os.system("clear")
     os.system("figlet DS.hacker")
+    print("______________________")
+    print("|     DS.hacker     |")
+    print("|TG:Https://t.me//hackerDss")
+    print("______________________")
     userphone = input("Please enter your mobile phone number: ")
     num_requests = int(input("Please enter the number of times you want to send the request: "))
 
