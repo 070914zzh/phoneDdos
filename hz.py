@@ -3,19 +3,10 @@ import os
 import requests
 import threading
 import logging
-
-# 配置日志
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
-def send_request(session, i, userphone):
-    """
-    使用给定的会话发送HTTP POST请求。
-
-    :param session: requests.Session 对象，用于发送请求
-    :param i: 请求的索引（用于日志记录）
-    :param userphone: 要发送的手机号码
-    """
+def send_request(session, i, userphone)
     try:
         url = "http://szrx.linfen.gov.cn:8080/lf_12345_api/rx/mailbox/sendMessageOnly"
         headers = {
@@ -43,7 +34,6 @@ if __name__ == "__main__":
     userphone = input("Please enter your mobile phone number: ")
     num_requests = int(input("Please enter the number of times you want to send the request: "))
 
-    # 使用requests.Session()来管理会话，这有助于重用连接并提高效率
     with requests.Session() as session:
         threads = []
 
